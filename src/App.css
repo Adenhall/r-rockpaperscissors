@@ -36,3 +36,12 @@ h1 {
   color: red;
   border: 10px solid red;
 }
+
+.tie {
+  color: black;
+  border: 10px solid black;
+}
+
+.btn {
+  margin-right: 10px;
+}

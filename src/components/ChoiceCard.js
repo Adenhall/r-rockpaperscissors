@@ -1,16 +1,14 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-class ChoiceCard extends Component {
-  render () {
+function ChoiceCard (props) {
     return (
-      <div className={`choice-card ${this.props.winner ? 'winner' : 'loser'}`}>
-        <h1>{this.props.title}</h1>
-        <img src={this.props.imgUrl}/>
-        <h1>{this.props.winner ? 'Hurray! Good job' : 'Awww better luck next time'}</h1>
+      <div className={`choice-card ${props.winner ? 'winner' : 'loser'}`}>
+        <h1>{props.title}</h1>
+        <h2>{props.name}</h2>
+        <img src={props.imgURL}/>
+        <h3>{props.winner ? 'WINNER' : 'LOSER'}</h3>
       </div>
-
     )
-  }
 }
 
 export default ChoiceCard
